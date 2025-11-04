@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/lucide-static@0.344.0/font/lucide.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Guide page</title>
+  <style>
+
+.toc-container {
+    /*max-width: 700px;*/
+    margin: auto;
+    padding: 20px;
+    border-left: 4px solid #00a8e8;
+    /*background-color: #f9f9f9;*/
+    border-radius: 6px;
+  }
+
+  .toc-container h3 {
+    font-size: 1.3rem;
+    color: #003b45;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .toc-container ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0;
+  }
+
+  .toc-container li {
+    margin: 20px 0;
+  }
+
+  .toc-container a {
+    text-decoration: none;
+    color: #0077b6;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+  }
+
+  .toc-container a:hover {
+    color: #005f73;
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    body {
+      margin: 20px;
+    }
+    .toc-container {
+      padding: 15px;
+      border-left: 3px solid #007b8f;
+    }
+    .toc-container h3 {
+      font-size: 1.2rem;
+    }
+    .toc-container a {
+      font-size: 0.95rem;
+    }
+  }
+
+   .inner-img .container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.inner-list-content li{
+  font-size: 18px;
+  padding: 10px;
+}
+
+.BFSI-container{
+  background: #f5f5f5;
+    border-radius: 12px;
+}
+
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 40px;
+  }
+
+  .left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 200, 255);
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 280px;
+    color: #00b5e2;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+
+  .box:hover {
+    background: rgba(190, 189, 189, 0.2);
+    transform: translateY(-3px);
+  }
+
+  .box i {
+    background-color: #00b5e2;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  /* Piggy Bank Center */
+  .center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .piggy {
+    width: 180px;
+    height: 180px;
+    background:  rgba(0, 200, 255, 100);
+    border: 2px solid #00c8ff;
+    border-radius: 50% 45% 55% 45% / 55% 45% 50% 50%;
+    box-shadow: 0 0 30px rgba(0, 200, 255, 0.7);
+    position: relative;
+  }
+
+  .piggy::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 40px;
+    height: 20px;
+    background: rgba(0, 200, 255, 0.3);
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+  }
+
+  .coin {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background: rgba(0,200,255,100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    animation: float 3s infinite ease-in-out;
+  }
+
+  .coin:nth-child(1) { top: -80px; left: -40px; animation-delay: 0s; }
+  .coin:nth-child(2) { top: -100px; left: 50px; animation-delay: 1s; }
+  .coin:nth-child(3) { top: -60px; left: 10px; animation-delay: 2s; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); opacity: 0.9; }
+    50% { transform: translateY(-10px); opacity: 1; }
+  }
+
+  /* Responsive */
+  @media (max-width: 1000px) {
+    .content {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .left, .right {
+      align-items: center;
+    }
+
+    .box {
+      width: 90%;
+      max-width: 320px;
+    }
+  }
+
+
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  
+
+  
+
+  /* Center Heart Section */
+  .center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heart {
+    position: relative;
+    width: 140px;
+    height: 125px;
+    background-color: #00c8ff;
+    transform: rotate(-45deg);
+    border-radius: 0% 0% 0 0;
+    box-shadow: 0 0 30px rgba(0,200,255,0.6);
+
+  }
+
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 125px;
+    background-color: #00c8ff;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0,200,255,0.6);
+  }
+
+  .heart::before {
+    top: -70px;
+    left: 0;
+  }
+
+  .heart::after {
+    left: 65px;
+    top: 0;
+  }
+
+  /* Animated glowing cross in heart */
+  .cross {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    /*width: 20px;
+    height: 60px;*/
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #fff;
+    animation: float 3s infinite ease-in-out ;
+    z-index: 1;
+  }
+
+  .cross::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 20px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    left: -20px;
+  }
+  .cross::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    top: 20px;
+    transform: translate(-50%, -50%) rotate(135deg);
+    left: -20px;
+  }
+
+ 
+
+  /* Responsive Design */
+  @media (max-width: 1000px) {
+    .content {
+      flex-direction: column;
+      gap: 50px;
+    }
+    .left, .right {
+      align-items: center;
+    }
+    .box {
+      width: 90%;
+      max-width: 330px;
+    }
+  }
+
+/* Glowing plant structure */
+ /* Center Animated Plant Icon */
+
+
+.plant-icon {
+  background: rgba(0, 200, 255, 100);
+  border: 2px solid rgba(0, 200, 255, 0.4);
+  border-radius: 50%;
+  padding: 60px;
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+  position: relative;
+  animation: pulse 3s ease-in-out infinite;
+  margin-top: -60px;
+}
+
+.plant-icon::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  border: 2px dashed rgba(0, 200, 255, 0.5);
+  /*animation: rotate 6s linear infinite;*/
+}
+
+.plant-icon i {
+  font-size: 5rem;
+  color: #ffffff;
+  text-shadow: 0 0 25px #00eaff;
+  animation: glow 2s infinite alternate;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(0, 200, 255, 0.3); }
+  50% { transform: scale(1.05); box-shadow: 0 0 40px rgba(0, 255, 255, 0.8); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #00c8ff, 0 0 20px #00c8ff; }
+  100% { text-shadow: 0 0 40px #00ffff, 0 0 80px #00ffff; }
+}
+
+
+
+/* Animated store */
+.store {
+  background: rgba(0, 200, 255, 100);
+  border: 2px solid rgba(0, 200, 255, 0.4);
+  border-radius: 25px;
+  padding: 65px;
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+  animation: pulse 3s infinite ease-in-out;
+  position: relative;
+  margin-top: -65px;
+}
+
+/* Add glowing ring effect */
+.store::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 30px;
+  border: 2px dashed rgba(0, 200, 255, 0.4);
+  /*animation: rotate 6s linear infinite;*/
+}
+
+.store i {
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0 0 20px #00c8ff;
+  animation: glow 2s infinite alternate;
+  
+}
+
+/* Glow and pulse animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 200, 255, 0.8);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #00c8ff, 0 0 20px #00c8ff;
+  }
+  100% {
+    text-shadow: 0 0 30px #00eaff, 0 0 60px #00eaff;
+  }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+  
+
+
+/* Animated store */
+.hospitality {
+  background: rgba(0, 200, 255, 100);
+  border: 2px solid rgba(0, 200, 255, 0.4);
+  border-radius: 25px;
+  padding: 65px;
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+  animation: pulse 3s infinite ease-in-out;
+  position: relative;
+  margin-top: -65px;
+}
+
+/* Add glowing ring effect */
+.hospitality::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 30px;
+  border: 2px dashed rgba(0, 200, 255, 0.4);
+  /*animation: rotate 6s linear infinite;*/
+}
+
+.hospitality i {
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0 0 20px #00c8ff;
+  animation: glow 2s infinite alternate;
+  transform: translate(0%, 0%) rotate(-90deg);
+}
+
+/* Glow and pulse animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 200, 255, 0.8);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #00c8ff, 0 0 20px #00c8ff;
+  }
+  100% {
+    text-shadow: 0 0 30px #00eaff, 0 0 60px #00eaff;
+  }
+}
+
+
+
+
+
+
+/* Animated store */
+.entertainment {
+  background: rgba(0, 200, 255, 100);
+  border: 2px solid rgba(0, 200, 255, 0.4);
+  border-radius: 25px;
+  padding: 65px;
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+  animation: pulse 3s infinite ease-in-out;
+  position: relative;
+  margin-top: -65px;
+}
+
+/* Add glowing ring effect */
+.entertainment::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 30px;
+  border: 2px dashed rgba(0, 200, 255, 0.4);
+  /*animation: rotate 6s linear infinite;*/
+}
+
+.entertainment i {
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0 0 20px #00c8ff;
+  animation: glow 2s infinite alternate;
+  transform: translate(0%, 0%) rotate(-90deg);
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@keyframes glow {
+      from { box-shadow: 0 0 25px rgba(0, 204, 255, 0.4); }
+      to { box-shadow: 0 0 70px rgba(0, 204, 255, 0.9); }
+    }
+
+    .entertainment i {
+      font-size: 4rem;
+      color: #ffffff;
+      /*animation: spin 6s linear infinite;*/
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Popcorn Animation (small dots) */
+    .popcorn {
+      position: absolute;
+      bottom: 30px;
+      display: flex;
+      gap: 6px;
+      animation: pop 2s ease-in-out infinite;
+    }
+
+    .popcorn span {
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      animation: floatPop 3s ease-in-out infinite;
+    }
+
+    @keyframes floatPop {
+      0%, 100% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-10px); opacity: 0.6; }
+    }
+
+    @keyframes pop {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+    <div class="navbar">
+      <div class="brand">
+        <img src="assets/Img/Logo.svg" alt="Veltris Logo">
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#"><i class="lucide-home"></i> Company</a></li>
+        <li><a href="#"><i class="lucide-cpu"></i> Services</a></li>
+
+        <li>
+          <a href="#"><i class="lucide-box"></i> Industries ▾</a>
+          <!--<div class="mega-menu">
+            
+              <ul>
+                <li>
+                  <a href="#"><i class="lucide-brain"></i> Automation</a>
+                  <div class="sub-mega">
+                    <a href="#">Chatbots</a>
+                    <a href="#">Data Labeling</a>
+                    <a href="#">Predictive Models</a>
+                  </div>
+                </li>
+                <li><a href="#"><i class="lucide-server"></i> AI Solutions</a></li>
+                <li><a href="#"><i class="lucide-database"></i> Insights</a></li>
+                <li><a href="#"><i class="lucide-database"></i> Careers</a></li>
+                <li><a href="#"><i class="lucide-database"></i> BPK Tech</a></li>
+                <li><a href="#"><i class="lucide-database"></i> Insights</a></li>
+              </ul>
+            
+          </div>-->
+        </li>
+        <li><a href="#"><i class="lucide-users"></i> AI Solutions</a></li>
+        <li><a href="#"><i class="lucide-users"></i> Insights</a></li>
+        <li><a href="#"><i class="lucide-users"></i> Careers</a></li>
+        <li><a href="#"><i class="lucide-phone"></i> BPK Tech</a></li>
+        <li><a href="#" class="cta-btn">Schedule a Meeting</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- Responsive Breadcrumb Banner Section -->
+<!--<section class="breadcrumb-banner">
+  <div class="breadcrumb-overlay">
+    <div class="container">
+    <div class="breadcrumb-content">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li aria-current="page"><a href="#">Client Case Studies</a></li>
+        </ol>
+      </nav>
+      <h1 class="page-title">Built Fast, Flexible & Scalable Platform Solutions for Video Service and OTT Providers</h1>-->
+      <!--<h4 class="sub-heading">Redesigned and built the revenue and user lifecycle management platform to keep pace with the evolving consumer demand and emerging multi-channel distribution models.</h4>-->
+      <!--<div class="Breadcrumb-cta"><a href="#" class="cta-btn">Download</a></div>
+    </div>
+    </div>
+  </div>
+</section>-->
+
+
+<!-- Fixed Download Button + Slide-Out Form -->
+<div class="download-wrapper">
+  <div class="download-btn">Download PDF</div>
+
+  <div class="download-form">
+    <h3>Download Case Studies</h3>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Mobile Number" maxlength="10" required />
+      <textarea rows="3" placeholder="Message (optional)"></textarea>
+      <button type="submit">Download Now</button>
+    </form>
+  </div>
+</div>
+
+
+
+<!-- Hero Section -->
+  <div class="guide-main-content">
+    <div class="guide-content-holder">
+
+    <div class="container">
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li aria-current="page"><a href="#">AI Guides and Innovations</a></li>
+        </ol>
+      </nav>
+    <h1>Generative AI Guide <br>Discover the Fascinating World of Generative AI!</h1>
+    
+  <p>
+    Generative AI can help streamline workflows, improve CX, and enhance agent performance.<br> Learn how to leverage these AI-powered tools in our guide.
+  </p>
+  </div>
+  </div>
+  </div>
+
+  <!-- Author Section -->
+   <div class="container">
+  <div class="author-section">
+    <div class="share-bar">
+      <span>Share</span>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fas fa-link"></i></a>
+    </div>
+    <div class="last-updated">
+      <i class="fa fa-clock"></i> Last updated August 13, 2025
+    </div>
+  </div>
+  </div>
+
+  <!-- Contact Sales Button -->
+  <!--<a href="#" class="contact-sales">
+    <i class="fa fa-file-pdf"></i> Download PDF
+  </a>-->
+
+
+
+  <!-- Hero banner -->
+   
+   <section class="hero-section">
+    <div class="container">
+      <!--<div class="share-bar">
+      <span>Share</span>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fas fa-link"></i></a>
+    </div>-->
+      <div class=" guide-banner">
+
+    <!--<img src="https://raw.githubusercontent.com/gitaideagitu-droid/veltris/main/assets/Img/Guide/banner.jpg" alt="Case study hero image">-->
+    <img src="assets/Img/Guide/banner.jpg" alt="Case study hero image">
+  </div>
+    </div>
+  </section>
+
+  <section class="guideContent">
+    <div class="container">
+    <p>&nbsp;</p>
+<p><span style="font-weight: 400;font-size: 18px;">AI-powered digitalization is driving the entire world to go through the innovation cycle today, and that too at an accelerated speed. It is reshaping industries and organizations in the most interesting ways that couldn’t be even imagined in the past. The concept of Generative AI has been in the vicinity for quite some time, but recent advancements have powered it up in the most innovative ways.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">The concept of Generative AI, generating content with AI techniques like GAN (Generative Adversarial Networks), has existed since 2014… Recent advancements in architecture like Transformers, architecture like Expansive Neural Networks and models like GPT models have revolutionized Generative AI to generate content, engage users with real person like conversations and help in numerous automated tasks related to content.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">Generative AI has started so strong and at such a speed that it becomes quite difficult to keep up with the new models that are flooding the market. It is changing our whole approach toward creativity, innovation, and problem-solving in the digital world. Let’s delve deeper to understand more about Generative AI through this ultimate Generative AI guide.</span></p>
+<p>&nbsp;</p>
+
+<div class="toc-container">
+  <h3>Table of contents:</h3>
+  <ul>
+    <li><a href="#What is Generative AI?">What is Generative AI?</a></li>
+    <li><a href="#How Does Generative AI Work?">How Does Generative AI Work?</a></li>
+    <li><a href="#What are the Different Types of Generative AI Models?">What are the Different Types of Generative AI Models?</a></li>
+    <li><a href="#What are a Few Generative AI Use Cases?">What are a Few Generative AI Use Cases?</a></li>
+    <li><a href="#Understanding the Depths of Generative AI and Other Components of AI">Understanding the Depths of Generative AI and Other Components of AI</a></li>
+    <li><a href="#Conclusion">Conclusion</a></li>
+    <li><a href="#Frequently asked questions">Frequently asked questions</a></li>
+  </ul>
+</div>
+
+
+
+
+<!--<div class="ai-points">
+      <div class="point">
+        <i class="fa-solid fa-user-gear"></i>
+        <strong>Personalized Customer Experiences:</strong> Generative AI can create hyper-personalized insurance products and customer interactions by understanding individual customer needs and risk profiles in detail.
+      </div>
+
+      <div class="point">
+        <i class="fa-solid fa-gears"></i>
+        <strong>Streamlined Operations:</strong> It can automate and optimize various operational processes, from underwriting and claims processing to fraud detection and risk assessment, leading to increased efficiency and reduced costs.
+      </div>
+
+      <div class="point">
+        <i class="fa-solid fa-lightbulb"></i>
+        <strong>Innovative Product Development:</strong> Generative AI accelerates the development of novel insurance products and services tailored to emerging risks and customer demands.
+      </div>
+
+      <div class="point">
+        <i class="fa-solid fa-chart-line"></i>
+        <strong>Enhanced Decision-Making:</strong> By generating synthetic data and scenarios, it improves risk modeling, forecasting, and strategic decision-making for insurers.
+      </div>
+    </div>
+    <p>&nbsp;</p>
+    <p><span style="font-weight: 400;font-size: 20px;">Generative AI empowers insurers to be more proactive, customer-centric, and efficient in a rapidly evolving market.</span></p>-->
+
+</div>
+ </section>
+
+ <section class="inner-img">
+  <div class="container">
+    <div class=" clients-section-banner">
+      <p>&nbsp;</p>
+      <img src="assets/Img/Guide/Generative Artificial Intelligence.png " alt="Guide inner image">
+    </div>
+  </div>
+ </section>
+ 
+
+ <!--<section class="clients-section">
+  <div class="clients-section container">
+    <h2>Generative Artificial Intelligence</h2>-->
+
+
+<!--<div class=" clients-section-banner">
+
+    <img src="assets/Img/Guide/Generative Artificial Intelligence.png " alt="Case study hero image">
+    </div>-->
+
+<!--<div class="clients-section-img-holder">
+    <div class="item audio">
+      <img src="https://cdn-icons-png.flaticon.com/512/727/727269.png" alt="Audio">
+      <div class="label">Audio</div>
+    </div>
+
+    <div class="item video">
+      <img src="https://cdn-icons-png.flaticon.com/512/2950/2950660.png" alt="Video">
+      <div class="label">Video</div>
+    </div>
+
+    <div class="ai-center">AI</div>
+
+    <div class="item images">
+      <img src="https://cdn-icons-png.flaticon.com/512/3940/3940056.png" alt="Images">
+      <div class="label">Images</div>
+    </div>
+
+    <div class="item text">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="Text">
+      <div class="label">Text</div>
+    </div>
+
+    <div class="line audio-line"></div>
+    <div class="line video-line"></div>
+    <div class="line images-line"></div>
+    <div class="line text-line"></div>
+  
+  </div>
+  </div>
+  </section>-->
+
+
+<section class="market-growth"id="What is Generative AI?">
+  <div class="container">
+    <p>&nbsp;</p>
+  <h2 >What is Generative AI?</h2>
+<p><span style="font-weight: 700;font-size: 20px;"><strong>Knowing the Depths of Generative AI Ocean!</strong></span></p>
+
+<p><span style="font-weight: 400;font-size: 18px;">In terms of functionality, Generative AI is a multimodal AI system that assists industries in reducing time spent on generating text, realistic images, and short videos; summarizing long texts, and helping in complex tasks like identifying defects in designs.</span></p>
+<p>&nbsp;</p>
+<h3>So, what is Generative AI?</h3>
+
+<p><span style="font-weight: 400;font-size: 18px;">Generative AI is an artificial intelligence system that uses deep learning models to generate content taking cues from the data it is trained on. The data can be in any form, such as images or human-readable text. The term Generative AI is coined as it can generate content – whether text, audio, or images. It performs such actions by detecting the underlying patterns of the input. The patterns act as a basis for creating similar content that is so realistic that it becomes very difficult to differentiate it from human-created works.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">To make things much simpler, Generative AI is the creative side of AI that processes large sets of data and creates new content such as images, content, music, and more.</span></p>
+  <!--<div class="growth-list">
+    <div class="growth-card">
+      <i class="fa-solid fa-chart-line"></i>
+      <p>
+        The Generative AI in insurance market is projected to grow from 
+        <strong>$1.08 billion in 2024</strong> to <strong>$1.51 billion in 2025</strong>,
+        demonstrating a CAGR of <strong>39.8%</strong>.
+        <em>(Source: Generative AI In Insurance Global Market Report 2025 – The Business Research Company)</em>
+      </p>
+    </div>
+  </div>-->
+
+  <p>&nbsp;</p>
+<h3>The Evolution of Generative AI</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">In the 1950s, when scientists introduced the concept of Machine Learning (ML) to the world, they were also toying with the idea of using Machine Learning to generate new data. Markov Chain is one of the first few examples of Generative AI which could be used to generate sequences of data based on the inputs. Unfortunately, the computational power and data resources didn’t support the learning activity in those days. Nevertheless, the technological developments and availability of digital data helped in thrusting the machine learning curve forward between the years 1990 – 2000.</span></p>
+<ul class="inner-list-content">
+        <li>Technically, Generative AI was performing minimal functions, such as chatbot back in 1966.</li>
+        <li>In the proceeding years, experts working on AI turned these simple chatbots into highly capable tools.</li>
+        <li>After publishing the white paper “Attention is All You Need” in 2015, and performing thorough research for 4 years, in 2018, scientists introduced the concept of ‘Transformers.”</li>
+        <li>Transformers replaced many old algorithms that were complex and were not able to generate superior quality output.</li>
+        <li>OpenAI introduced ChatGPT in the year 2020 which uses GPT (Generative Pre-trained Transformer) models on neural networks using deep learning architecture to generate content.</li>
+        <li>OpenAI brought another tool DALL-E in 2021 with the ability to generate realistic images based on the command prompts using text.</li>
+        <li>A few eminent tech companies are racing to introduce Generative AI to new realms of work to reduce the burden on humans.</li>
+      </ul>
+  <p>&nbsp;</p>
+
+    <div class="growth-card">
+        <p><span style="font-weight: 400;font-size: 18px;">According to Statista, in the United States, the adoption rate of Generative AI in the workplace is the highest for Gen Z at 29%. Statistics prove that transformers are the reason for the drastic evolution of Generative AI.</span></p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="market-growth"id="How Does Generative AI Work?">
+  <div class="container">
+    <p>&nbsp;</p>
+  <h2 >How Does Generative AI Work?</h2>
+<p><span style="font-weight: 700;font-size: 20px;"><strong>Crafting the Formula for Creative AI!</strong></span></p>
+
+<p><span style="font-weight: 400;font-size: 18px;">Generative AI can learn the patterns and structures from the given data sets and then apply the knowledge in creating new data that is similar to the original dataset. Let’s get into understanding how this formula works.</span></p>
+<p>&nbsp;</p>
+<h3>Training Data</h3>
+
+<p><span style="font-weight: 400;font-size: 18px;">The initial training of Generative AI starts by sharing enormous amounts of datasets of the type of data that is required to be generated. For instance, if the Generative AI is intended to generate human face images, the datasets fed for training also consist of a large collection of human face images.</span></p>
+
+<p>&nbsp;</p>
+<h3>Model Architecture</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">In Generative AI, complex neural network architectures such as Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs) are used to learn the underlying patterns and features that are present in the given training data. These architectures boost the performance of the model.</span></p>
+
+  <p>&nbsp;</p>
+<h3>Learning Patterns</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">As a next step in the training process, the model learns to identify patterns and correlations within the available datasets. For instance, Generative AI will learn to identify common facial features like eyes, nose, and mouth from the given human faces’ datasets.</span></p>
+
+  <p>&nbsp;</p>
+<h3>Generating New Data</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">Once the training is completed, the Generative AI model produces new data samples based on the learned ones. By providing input data, we can test Generative AI by allowing it to produce similar output data. For example, the model takes the input data of given human faces and produces data that resembles the training dataset.</span></p>
+
+  <p>&nbsp;</p>
+<h3>Refinement and Improvement</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">Once the output is produced, the Generative AI model undergoes a refinement process to enhance the output quality. The model may be fine-tuned by altering the parameters, refining the training process, or through techniques such as reinforcement learning to further improve the generated output.</span></p>
+
+  <p>&nbsp;</p>
+<h3>Evaluation</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">The final stage is evaluation. Once the output is generated, its quality is checked using various metrics and assessment criteria. The model becomes successful when such generated output meets the desired criteria.</span></p>
+
+  <p>&nbsp;</p>
+
+    <div class="growth-card">
+        <p><span style="font-weight: 400;font-size: 18px;">Thus, Generative AI uses cutting-edge AI techniques to understand the patterns of the given dataset and reproduce the same quality of output that resembles the originally fed datasets.</span></p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="market-growth"id="What are the Different Types of Generative AI Models?">
+  <div class="container">
+    <p>&nbsp;</p>
+  <h2 >What are the Different Types of Generative AI Models?</h2>
+<p><span style="font-weight: 700;font-size: 20px;"><strong>Exploring the Diverse Generative AI Models!</strong></span></p>
+
+<p><span style="font-weight: 400;font-size: 18px;">To perform different functions perfectly, many techniques are used for Generative AI. As stated earlier, Generative AI uses neural networks, a type of architecture that functions and looks like a human brain. Deep learning also uses neural networks that contain more than three layers. So, let’s first understand the structure of neural networks.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">Layers of interconnected nodes form a neural network where each node has an individual statistics model that processes a single facet of input based on its learning from the training data. It exactly functions like our brain where certain parts of the brain are dedicated to performing specific tasks. For instance, certain neurons might fire once we see a familiar face. In the same way, parts of neural networks also recognize different patterns and relationships based on the training data.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">Individual nodes may recognize and provide individual decisions such as whether a word is a noun or not, the final output is caused by the domino effect when all these decisions come together as a complex output.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">These neural networks are extensively used by data scientists to build a variety of Generative AI models. Let’s look at the most common architecture kinds.</span></p>
+<p>&nbsp;</p>
+<h3>Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs)</h3>
+
+<p><span style="font-weight: 400;font-size: 18px;">GAN and VAE are the two models used for image generation. The AI activity related to image generation started way back in the mid-2010s, thus giving us a glimpse of its capability in image generation in the present time. GANs function by one neural network generating an output, and the other one tries to analyze if it is fake or real. Through this kind of back-and-forth training, the model learns to create better images. Whereas the VAE generates encodings of the image parts and then creates sample parts of such encodings later decoding them to create new images.</span></p>
+
+<p>&nbsp;</p>
+<h3>Diffusion Models</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">In a diffusion model for generative AI, training data is destroyed via the addition of Gaussian noise and then recovered by reversing the addition of that noise. You can think of adding Gaussian noise as scrambling the pixels in the image. The noise is “Gaussian” because it’s added based on probabilities that lie along a bell curve. When the model reverses the noise, it makes predictions by decoding those probabilities, which results in an original image each time, even with the same prompt.</span></p>
+
+  <p>&nbsp;</p>
+<h3>Large Language Models (LLMs)</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">With the advent of transformers, a new type of neural network, promising models of Generative AI such as LLM came into existence. Transformers can understand all the words of an input sentence in one go and find out how they are related, thus generating meaningful text. These transformers have been around since 2017 but training them with vast amounts of data and improving their performance helped to see a breakthrough in the form of today’s Generative AI natural language tools.</span></p>
+
+  <p>&nbsp;</p>
+<h3>Hybrid models</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">In hybrid models, rule-based computation and machine learning along with neural networks are brought together to ensure human-like watchfulness of the AI system’s operations. Organizations can pick one of the above Generative AI models and attach rules-based or logic-based systems during or after their operations for performance enhancement or specific output.</span></p>
+
+
+    <div class=" clients-section-banner">
+      <p>&nbsp;</p>
+      <img src="assets/Img/Guide/Hybrid models.png " alt="Guide inner image">
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="market-growth"id="What are a Few Generative AI Use Cases?">
+  <div class="container">
+    <p>&nbsp;</p>
+  <h2 >What are a Few Generative AI Use Cases?</h2>
+<p><span style="font-weight: 700;font-size: 20px;"><strong>How Essential Is It for Each Industrial Domain?</strong></span></p>
+
+<p><span style="font-weight: 400;font-size: 18px;">Generative AI has numerous use cases across various industries, such as data generation, natural language generation, artistic application, drug discovery, and many more. We will have a closer look at a few advantages that have disrupted different domains.</span></p>
+
+<p>&nbsp;</p>
+<h3>Generative AI Use Cases in BFSI</h3>
+
+<p><span style="font-weight: 400;font-size: 18px;">In the banking, finance, and Insurance sectors, Generative AI plays a dominant role by providing an ‘N’ number of services and support. The following are a few aspects that can be considered.</span></p>
+
+<p>&nbsp;</p>
+<div class="BFSI-container">
+  
+  <div class="content">
+    
+    <!-- Left Column -->
+    <div class="left">
+      <div class="box"><i class="fa-solid fa-hand-holding-dollar"></i> Personalized loan recommendations</div>
+      <div class="box"><i class="fa-solid fa-file-signature"></i> Autofill & information verification</div>
+      <div class="box"><i class="fa-solid fa-coins"></i> Personalized repayment recommendations</div>
+      <div class="box"><i class="fa-solid fa-robot"></i> Investment advising chatbots</div>
+      
+    </div>
+
+    <!-- Center Piggy Bank -->
+    <div class="center">
+      <div class="piggy"></div>
+      <div class="coin"><i class="fa-solid fa-dollar-sign"></i></div>
+      <div class="coin"><i class="fa-solid fa-dollar-sign"></i></div>
+      <div class="coin"><i class="fa-solid fa-dollar-sign"></i></div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right">
+      <div class="box"><i class="fa-solid fa-file-invoice-dollar"></i> Financial documents</div>
+      <div class="box"><i class="fa-solid fa-file-shield"></i> Identification of fraudulent content</div>
+      <div class="box"><i class="fa-solid fa-user-shield"></i> Personalized insurance recommendations</div>
+      <div class="box"><i class="fa-solid fa-dollar-sign"></i> Custom pricing</div>
+      <!--<div class="box"><i class="fa-solid fa-clipboard-check"></i> Coverage recommendations</div>-->
+    </div>
+
+  </div>
+</div>
+
+
+
+<p>&nbsp;</p>
+<h3>Generative AI Use Cases in Healthcare</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">The healthcare sector is one of the domains that could benefit extensively from the usage of Generative AI. The following are a few options where Generative AI works wonders.</span></p>
+
+<p>&nbsp;</p>
+<div class="BFSI-container">
+  
+  <div class="content">
+    
+    <!-- Left Column -->
+    <div class="left">
+      <div class="box"><i class="fa-solid fa-triangle-exclamation"></i> Disease symptoms & treatment checklists</div>
+      <div class="box"><i class="fa-solid fa-prescription-bottle-medical"></i> Personalized medication and treatment plan</div>
+      <div class="box"><i class="fa-solid fa-file-medical"></i> Autofill patient data</div>
+      <div class="box"><i class="fa-solid fa-x-ray"></i> Medical notes, X-rays, MRIs, EHR insights</div>
+    </div>
+
+    <!-- Center Piggy Bank -->
+    <div class="center">
+      <div class="heart">
+        <div class="cross"></div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right">
+      <div class="box"><i class="fa-solid fa-laptop-medical"></i> Virtual patient monitoring</div>
+      <div class="box"><i class="fa-solid fa-clock"></i> 24/7 patient assistance</div>
+      <div class="box"><i class="fa-solid fa-notes-medical"></i> Clinical care guidelines</div>
+      <div class="box"><i class="fa-solid fa-video"></i> Audio or video conversations</div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<p>&nbsp;</p>
+<h3>Generative AI Use Cases in Life Sciences</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">Generative AI, as in other domains, helps scientists and others perform essential functions with precision. The following list shows a glimpse of the capability of Generative AI in the Lifesciences domain.</span></p>
+
+<p>&nbsp;</p>
+<div class="BFSI-container">
+  
+  <div class="content">
+    
+    <!-- Left Column -->
+    <div class="left">
+      <div class="box"><i class="fa-solid fa-flask"></i> Lead compound optimization</div>
+      <div class="box"><i class="fa-solid fa-vials"></i> New drug reactions</div>
+      <div class="box"><i class="fa-solid fa-desktop"></i> Drug testing with computer simulation</div>
+      <div class="box"><i class="fa-solid fa-chart-pie"></i> Drug SWOT</div>
+      
+    </div>
+
+    <!-- Center Piggy Bank -->
+    <div class="center">
+      <div class="plant-icon">
+          <i class="fa-solid fa-seedling"></i>
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right">
+      <div class="box"><i class="fa-solid fa-file-medical"></i> Information from drug safety reports</div>
+      <div class="box"><i class="fa-solid fa-file-prescription"></i> Drug filing assistance</div>
+      <div class="box"><i class="fa-solid fa-file-waveform"></i> Adverse event reports</div>
+      <div class="box"><i class="fa-solid fa-capsules"></i> Drug safety signals</div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<p>&nbsp;</p>
+<h3>Generative AI Use Cases in Retail</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">The retail industry has also revolutionized with the introduction of Generative AI and its capabilities. Let’s see how Generative AI is changing the ball game in this sector.</span></p>
+
+<p>&nbsp;</p>
+<div class="BFSI-container">
+  
+  <div class="content">
+    
+    <!-- Left Column -->
+    <div class="left">
+      <div class="box"><i class="fa-solid fa-robot"></i> Conversational AI chatbots</div>
+        <div class="box"><i class="fa-solid fa-cart-plus"></i> Auto-generated shopping lists</div>
+        <div class="box"><i class="fa-solid fa-credit-card"></i> Auto-fill transaction flows</div>
+        <div class="box"><i class="fa-solid fa-box-open"></i> Product catalog designs and content</div>
+        <div class="box"><i class="fa-solid fa-file-invoice"></i> Custom and logistics documents</div>
+    </div>
+
+    <!-- Center Piggy Bank -->
+    <div class="center">
+      <div class="store">
+          <i class="fa-solid fa-store"></i>
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right">
+      <div class="box"><i class="fa-solid fa-clipboard-list"></i> Backup suppliers list</div>
+        <div class="box"><i class="fa-solid fa-chart-line"></i> Inventory and sales reports</div>
+        <div class="box"><i class="fa-solid fa-screwdriver-wrench"></i> Procurement & quality control guidelines</div>
+        <div class="box"><i class="fa-solid fa-network-wired"></i> Multi-node fulfillment strategy</div>
+        <div class="box"><i class="fa-solid fa-chart-pie"></i> Initiate demand forecasts</div>
+    </div>
+
+  </div>
+</div>
+
+
+<p>&nbsp;</p>
+<h3>Generative AI Use Cases in Travel and Hospitality</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">Generative AI has brought significant change in the way people perceive the travel and hospitality industry. With the simplification of the processes, many people are showing interest in this domain. Let’s check how Generative AI has made life simple for this industry people.</span></p>
+
+<p>&nbsp;</p>
+<div class="BFSI-container">
+  
+  <div class="content">
+    
+    <!-- Left Column -->
+    <div class="left">
+      <div class="box"><i class="fa-solid fa-map-location-dot"></i> Trip itineraries and excursions</div>
+      <div class="box"><i class="fa-solid fa-gift"></i> Loyalty programs</div>
+      <div class="box"><i class="fa-solid fa-plane-departure"></i> AI-driven travel booking</div>
+      <div class="box"><i class="fa-solid fa-comments"></i> Multi-language text/audio chatbots</div>
+      
+    </div>
+
+    <!-- Center Piggy Bank -->
+    <div class="center">
+      <div class="hospitality">
+          <i class="fa-solid fa-plane"></i>
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right">
+      <div class="box"><i class="fa-solid fa-hotel"></i> Virtual hotel ambiance tour</div>
+      <div class="box"><i class="fa-solid fa-bed"></i> Insights on room occupancy</div>
+      <div class="box"><i class="fa-solid fa-utensils"></i> Engaging menu descriptions</div>
+      <div class="box"><i class="fa-solid fa-chart-line"></i> Aggregate market data</div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<p>&nbsp;</p>
+<h3>Generative AI Use Cases in Media and Entertainment</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">The Media and entertainment domain is no exception. Generative AI has transformed the method of approaching customers in this industry. Let’s see how effective the role of Generative AI is in the media and entertainment domain.</span></p>
+
+<p>&nbsp;</p>
+<div class="BFSI-container">
+  
+  <div class="content">
+    
+    <!-- Left Column -->
+    <div class="left">
+      <div class="box"><i class="fa-solid fa-film"></i> Genre predictions for content categorization</div>
+      <div class="box"><i class="fa-solid fa-pen-nib"></i> Content creation insights</div>
+      <div class="box"><i class="fa-solid fa-tags"></i> Content searchability & discoverability tags</div>
+      <div class="box"><i class="fa-solid fa-music"></i> Music copyright management & enforcement</div>
+      <div class="box"><i class="fa-solid fa-newspaper"></i> News articles & weather reports</div>
+      <div class="box"><i class="fa-solid fa-book"></i> Reading & customized book lists</div>
+      
+    </div>
+
+    <!-- Center Piggy Bank -->
+    <div class="center">
+      <div class="entertainment">
+          <i class="fa-solid fa-film"></i>
+      <div class="popcorn">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right">
+      
+      <div class="box"><i class="fa-solid fa-language"></i> Language translation</div>
+      <div class="box"><i class="fa-solid fa-chart-line"></i> Reports on player performance</div>
+      <div class="box"><i class="fa-solid fa-graduation-cap"></i> Personalized training programs</div>
+      <div class="box"><i class="fa-solid fa-gamepad"></i> Personalized gaming content</div>
+      <div class="box"><i class="fa-solid fa-user-astronaut"></i> Non-playable characters</div>
+      <div class="box"><i class="fa-solid fa-vr-cardboard"></i> Game designs & testing patterns</div>
+    </div>
+
+  </div>
+</div>
+
+
+ <!---- <p>&nbsp;</p>
+
+    <div class=" clients-section-banner">
+      <p>&nbsp;</p>
+      <img src="assets/Img/Guide/Hybrid models.png " alt="Guide inner image">
+    </div>-->
+
+  </div>
+</section>
+
+
+
+
+<section class="market-growth"id="Understanding the Depths of Generative AI and Other Components of AI">
+  <div class="container">
+    <p>&nbsp;</p>
+  <h2>Understanding the Depths of Generative AI and Other Components of AI</h2>
+<p><span style="font-weight: 400;font-size: 18px;">Knowing about the various use cases of Generative AI, we understand what AI can do and what it is up to in the future. Delving a little deeper and comprehending Generative AI and other systems of AI will help us see the AI world better.</span></p>
+
+<p>&nbsp;</p>
+<h3>Exploring and Understanding Machine Learning (ML) and Generative AI</h3>
+
+<p><span style="font-weight: 400;font-size: 18px;">Generative AI has been the most interesting development in AI. It is the sub-field of Machine Learning where a programmer is not required to give detailed instructions to the system to generate images, video, and music. The system learns through constant training with data sets and provides a similar output to the original one.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">Traditional machine learning allows systems to recognize the patterns in data and predict the next step based on the training data. The main aim of Generative AI is to make the system independent and create new data based on the training dataset which is a completely new and almost human-like output. GANs, VAEs, and Autoregressive models are a few types of Generative AI that have sprung from the traditional machine learning approach. With constant progression in machine learning research, data scientists can find more sophisticated and realistic Generative AI models.</span></p>
+<p>&nbsp;</p>
+<h3>Exploring and Understanding Deep Learning and Generative AI</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">Deep learning, a subset of machine learning is engaged in training multiple layers of neural networks to identify patterns in data. Deep learning models such as convolutional neural networks (CNNs) and recurrent neural networks (RNN) are used in Generative AI applications particularly to generate images and text. Deep learning allows the system to learn from enormous datasets including unstructured data which makes it stand out.</span></p>
+
+  <p>&nbsp;</p>
+<h3>Exploring and Understanding Natural Language Processing (NLP) and Generative AI</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">Natural Language Processing (NLP) is a sub-field of AI that focuses on empowering systems to understand and interpret human language. Generative AI uses NLP techniques in the creation of product descriptions, news articles, text-to-speech applications, and more.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">Recent developments in deep learning such as neural NLP models, RNNs, and transformer models, have boosted the performance of Generative AI applications based on NLP technologies. NLP is considered a powerful tool in Generative AI and by leveraging it, businesses can find new growth opportunities.</span></p>
+  <p>&nbsp;</p>
+<h3>Exploring and Understanding Computer Vision and Generative AI</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">Computer Vision, as the name suggests, is that subfield of AI that enables systems to interpret and understand images and videos i.e. visual data. The combination of computer vision and Generative AI helps in creating new images and videos based on the training datasets.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">In recent times, AI-generated realistic images that do not exist in the real world are being generated using these algorithms. The output of synthetic photographs can be utilized for various purposes in industries. Computer vision and Generative AI can be used to create synthetic photographs for the e-commerce industry, entertainment industry, medical sector, and many more.</span></p>
+
+<p>&nbsp;</p>
+<h3>Exploring and Understanding Predictive AI and Generative AI</h3>
+  <p><span style="font-weight: 400;font-size: 18px;">Predictive AI and Generative AI are the two AI forces that are driving transformation in the technology itself which can bring more benefits in the future. Both technologies use machine learning algorithms; however, their goals are different. While Generative AI is focused on the creation of new content, Predictive AI focuses on providing the most accurate predictions.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">Generative AI allows the system to learn from vast amounts of data and generate similar but new images, whereas predictive AI uses statistical analysis to find patterns in data to predict behavior and forecast events. However, both these technologies can be merged to maximize their benefits and apply them to different industrial sectors.</span></p>
+
+  </div>
+</section>
+
+
+<section class="market-growth"id="Conclusion">
+  <div class="container">
+    <p>&nbsp;</p>
+  <h2>Conclusion</h2>
+<p><span style="font-weight: 400;font-size: 18px;">Overall, Generative AI has vast applications and potential for businesses across industries. Businesses can stand out from the competition in today’s rapidly evolving and data-driven world by leveraging the power of Generative AI.</span></p>
+<p><span style="font-weight: 400;font-size: 18px;">Organizations today focus on Generative Artificial Intelligence (Gen AI) as their strategic priority for it takes them closer to their goals. A recent report from EY states that 55% of Indian tech service companies’ CXOs believe in Generative AI bringing greater impact on their business. 15% state that these changes and impacts are crucial for business growth. The executives of the companies think that technology will lead to growth in revenue, reduction in cost, and improvement in productivity, only a third of them feel that their organizations are high in their receptiveness to such benefits of Generative AI.</span></p>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="ai-section" id="Frequently asked questions">
+  <div class="container">
+    <h2>Frequently asked questions</h2>
+  
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>What’s the difference between machine learning and artificial intelligence?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <ul class="accordion-list">
+      <li>
+        <span>The difference between machine learning and artificial intelligence is that machine learning models use algorithms to recognize data patterns and apply those results to future analysis, whereas AI can analyze and contextualize data for human-like responses and actions.</span>
+      </li>
+      </ul>
+        
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>What kinds of output can a generative AI model produce?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <ul class="accordion-list">
+      <li>
+        <span>Generative AI can produce text, images, sounds, music, code, predictive data, and more.</span>
+      </li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>Will generative AI eliminate human jobs?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <ul class="accordion-list">
+      <li>
+        <span>While it’s near impossible to predict the future, generative AI shouldn’t eliminate jobs but rather enhance human skills and reduce repetitive tasks, making employees’ jobs easier.</span>
+      </li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>Is generative AI reliable?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <ul class="accordion-list">
+      <li>
+        <span>As with any type of data collection, generative AI’s reliability depends on the data source. It’s important to train generative AI models on accurate, reputable sources with verifiable data so the output contains trusted and correct information.</span>
+      </li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span>How can I use generative AI to improve the customer experience?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <ul class="accordion-list">
+      <li>
+        <span>You can leverage generative AI to provide personalized support; create and update engaging self-service content in your knowledge base; gather insights from large datasets to improve your products and services; and automate processes that enhance support agent skills so they can provide exceptional customer service with every interaction.</span>
+      </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<script>
+  const headers = document.querySelectorAll(".accordion-header");
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const item = header.parentElement;
+      item.classList.toggle("active");
+    });
+  });
+</script>
+
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
+
+document.querySelectorAll('.nav-links > li > a').forEach(link => {
+  link.addEventListener('click', e => {
+    const parent = link.parentElement;
+    if (window.innerWidth <= 900 && parent.querySelector('.mega-menu')) {
+      e.preventDefault();
+      parent.classList.toggle('open');
+    }
+  });
+});
+</script>
+  
+</body>
+</html>
