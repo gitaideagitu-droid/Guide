@@ -559,6 +559,199 @@
       50% { transform: translateY(-5px); }
     }
 
+.stat-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: #f5f5f5;
+    border-radius: 0px!important;
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); */
+}
+
+
+.cta-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+  background-color: #f5f5f5;
+}
+.cta-section .container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.cta-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  transition: transform 0.2s ease;
+}
+
+/*.cta-card:hover {
+  transform: translateY(-5px);
+}*/
+
+.cta-card img {
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  padding: 1rem;
+}
+
+.cta-content {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.cta-content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #003865;
+}
+
+.cta-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #00333a;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #e22d00;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #ffffff;
+  color: #e22d00;
+  border: 1px solid #e22d00;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .cta-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    padding: 0;
+  }
+
+  .cta-content {
+    padding: 1rem;
+  }
+}
+
+
+/* Section Wrapper */
+/*.cta-section {
+  padding: 60px 20px;
+  background:  #f5f5f5;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+.cta-section p {
+  margin-bottom: 40px;
+      font-weight: 400;
+    font-size: 18px;
+}
+
+/* CTA Cards Grid */
+/*.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Individual Card */
+/*.cta-card {
+  background: #fff;
+  color: #333;
+  padding: 30px 25px;
+  border-radius: 16px;
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cta-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cta-card i {
+  font-size: 35px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.cta-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.cta-card p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.cta-card a {
+  display: inline-block;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.cta-card a:hover {
+  color: #0052cc;
+}
+
+/* Responsive Padding */
+/*@media (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 1.6rem;
+  }
+  .cta-section p {
+    font-size: 1rem;
+  }
+}*/
+
+
+
+
 
   </style>
 </head>
@@ -699,7 +892,7 @@
     </div>-->
       <div class=" guide-banner">
 
-    <!--<img src="https://raw.githubusercontent.com/gitaideagitu-droid/veltris/main/assets/Img/Guide/banner.jpg" alt="Case study hero image">-->
+    <!--<img src="https://raw.githubusercontent.com/gitaideagitu-droid/veltris/main/assets/Img/Casestudy/__Banner.png" alt="Case study hero image">-->
     <img src="assets/Img/Guide/banner.jpg" alt="Case study hero image">
   </div>
     </div>
@@ -847,11 +1040,22 @@
       </ul>
   <p>&nbsp;</p>
 
-    <div class="growth-card">
+    <!--<div class="growth-card">
         <p><span style="font-weight: 400;font-size: 18px;">According to Statista, in the United States, the adoption rate of Generative AI in the workplace is the highest for Gen Z at 29%. Statistics prove that transformers are the reason for the drastic evolution of Generative AI.</span></p>
-    </div>
+    </div>-->
   </div>
 </section>
+
+<section class="stat-section">
+    <div class="container">
+      <div class="stat-conent">
+    <div class="stat-number">29%</div>
+    <div class="stat-text">
+     Statistics prove that transformers are the reason for the drastic evolution of <strong>Generative AI.</strong>
+    </div>
+    </div>
+    </div>
+  </section>
 
 
 
@@ -888,13 +1092,73 @@
   <p><span style="font-weight: 400;font-size: 18px;">The final stage is evaluation. Once the output is generated, its quality is checked using various metrics and assessment criteria. The model becomes successful when such generated output meets the desired criteria.</span></p>
 
   <p>&nbsp;</p>
-
-    <div class="growth-card">
         <p><span style="font-weight: 400;font-size: 18px;">Thus, Generative AI uses cutting-edge AI techniques to understand the patterns of the given dataset and reproduce the same quality of output that resembles the originally fed datasets.</span></p>
-    </div>
+  
   </div>
 </section>
+<p>&nbsp;</p>
 
+
+
+<section class="cta-section">
+  <div class="container">
+  <div class="cta-card">
+    <img src="assets/Img/Guide/22.png" alt="Generative AI illustration">
+    <div class="cta-content">
+      <h2>Generative AI in Healthcare</h2>
+      <p>Learn how AI is transforming diagnostics, patient care, and drug discovery.Artificial Intelligence (AI) integration with unified data is no longer a future vision. It is a present-day strategic imperative for healthcare organizations.</p>
+      <a href="#" class="cta-button">Explore Now</a>
+    </div>
+  </div>
+  </div>
+
+  <!--<div class="cta-card">
+    <img src="support-tips.jpg" alt="Customer support guide">
+    <div class="cta-content">
+      <h2>Master customer support with AI tools</h2>
+      <p>Explore our guide to integrating AI into your support workflows and improving resolution times with smarter automation.</p>
+      <a href="#" class="cta-button">Read the guide</a>
+    </div>
+  </div>
+
+  <div class="cta-card">
+    <img src="data-security.jpg" alt="Data security tips">
+    <div class="cta-content">
+      <h2>Keep your data secure in the AI era</h2>
+      <p>Learn the best practices for data protection and compliance while scaling your AI-powered operations.</p>
+      <a href="#" class="cta-button">Learn more</a>
+    </div>
+  </div>-->
+</section>
+
+
+<!--<section class="cta-section">
+  <h2>Explore More Guides & Blogs</h2>
+  <p>Discover expert insights and practical tips on emerging technologies and business trends.</p>
+
+  <div class="cta-grid">
+    <div class="cta-card">
+      <i class="fa-solid fa-robot"></i>
+      <h3>Generative AI in Healthcare</h3>
+      <p>Learn how AI is transforming diagnostics, patient care, and drug discovery.</p>
+      <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="cta-card">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>AI Trends in 2025</h3>
+      <p>Stay ahead with the latest advancements in artificial intelligence and automation.</p>
+      <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="cta-card">
+      <i class="fa-solid fa-cloud"></i>
+      <h3>Cloud Strategy for Enterprises</h3>
+      <p>Unlock scalability and agility with cloud-first strategies for digital success.</p>
+      <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>-->
 
 
 <section class="market-growth"id="What are the Different Types of Generative AI Models?">
@@ -981,9 +1245,12 @@
 
   </div>
 </div>
+</div>
+</section>
 
 
-
+<section class="market-growth"id="What are a Few Generative AI Use Cases?">
+  <div class="container">
 <p>&nbsp;</p>
 <h3>Generative AI Use Cases in Healthcare</h3>
   <p><span style="font-weight: 400;font-size: 18px;">The healthcare sector is one of the domains that could benefit extensively from the usage of Generative AI. The following are a few options where Generative AI works wonders.</span></p>
@@ -1225,7 +1492,21 @@
 
   </div>
 </section>
+<p>&nbsp;</p>
+<section class="cta-section">
+<div class="container">
+  <!-- Schedule a Meeting CTA -->
+  <div class="cta-card meeting-cta">
+    <img src="assets/Img/Guide/Schedule a Meeting.png" alt="Schedule a Meeting">
+    <div class="cta-content">
+      <h2>Schedule a Meeting with Our Experts</h2>
+      <p>Connect with our team to discuss your business goals and see how AI-driven tools can elevate your customer experience. Pick a time that works best for you.</p>
+      <a href="#" class="cta-button meeting-btn">Schedule a Meeting</a>
+    </div>
+  </div>
+  </div>
 
+</section>
 
 <section class="market-growth"id="Conclusion">
   <div class="container">
